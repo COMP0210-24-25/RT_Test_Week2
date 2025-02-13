@@ -80,7 +80,7 @@ TEST_CASE("Test Camera Creation", "[Test Object Constructors]")
     REQUIRE_NOTHROW(cam = new Camera(3, 3));
     delete cam;
     REQUIRE_NOTHROW(cam = new Camera(100, 100, {0, 0, -5}));
-    REQUIRE(cam->get_position() == Vec3{0, 0, -5});
+    REQUIRE(cam.position == Vec3{0, 0, -5});
     delete cam;
 }
 
